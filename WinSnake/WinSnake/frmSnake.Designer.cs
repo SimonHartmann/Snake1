@@ -41,6 +41,7 @@
             this.pbSpielfeld.Size = new System.Drawing.Size(450, 450);
             this.pbSpielfeld.TabIndex = 0;
             this.pbSpielfeld.TabStop = false;
+            this.pbSpielfeld.Click += new System.EventHandler(this.pbSpielfeld_Click);
             // 
             // cmdStart
             // 

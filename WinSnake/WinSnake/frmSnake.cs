@@ -12,6 +12,7 @@ namespace WinSnake
 {
     public partial class frmSnake : Form
     {
+        Spiel sp;
         public frmSnake()
         {
             InitializeComponent();
@@ -25,6 +26,12 @@ namespace WinSnake
         private void button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pbSpielfeld_Click(object sender, EventArgs e)
+        {
+            sp = new Spiel();
+            sp.Schlange(pbSpielfeld, 30, 30, 15);
         }
     }
 }
