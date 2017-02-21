@@ -16,8 +16,12 @@ namespace WinSnake
 
         public void Schlange(PictureBox pb,Brush bfarbe, int intx, int inty,int intboxsize)
         {
+            intx = intx * intboxsize;
+            inty = inty * intboxsize;
             g = pb.CreateGraphics();
             g.FillEllipse(bfarbe, intx - (intboxsize / 2), inty - (intboxsize / 2), intboxsize, intboxsize);
         }
+
+
     }
 }

@@ -13,9 +13,15 @@ namespace WinSnake
     public partial class frmSnake : Form
     {
         Spiel sp;
+        int intKastenX;
+        int intKastenY;
+
+        
+
         public frmSnake()
         {
             InitializeComponent();
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -31,7 +37,7 @@ namespace WinSnake
         private void pbSpielfeld_Click(object sender, EventArgs e)
         {
             sp = new Spiel();
-            sp.Schlange(pbSpielfeld,Brushes.Pink, 30, 30, 15);
+            sp.Schlange(pbSpielfeld,Brushes.Pink, 10, 10, 15);
         }
 
         private void frmSnake_KeyDown(object sender, KeyEventArgs e)
