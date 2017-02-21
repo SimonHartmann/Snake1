@@ -8,3 +8,11 @@ C:\Users\Angelika\Documents\GitHub\Snake1\WinSnake\WinSnake\obj\Debug\WinSnake.P
 C:\Users\Angelika\Documents\GitHub\Snake1\WinSnake\WinSnake\obj\Debug\WinSnake.csproj.GenerateResource.Cache
 C:\Users\Angelika\Documents\GitHub\Snake1\WinSnake\WinSnake\obj\Debug\WinSnake.exe
 C:\Users\Angelika\Documents\GitHub\Snake1\WinSnake\WinSnake\obj\Debug\WinSnake.pdb
+C:\Users\Schule\Documents\GitHub\Snake\WinSnake\WinSnake\obj\Debug\WinSnake.exe
+C:\Users\Schule\Documents\GitHub\Snake\WinSnake\WinSnake\obj\Debug\WinSnake.pdb
+C:\Users\Schule\Documents\GitHub\Snake\WinSnake\WinSnake\bin\Debug\WinSnake.exe
+C:\Users\Schule\Documents\GitHub\Snake\WinSnake\WinSnake\bin\Debug\WinSnake.pdb
+C:\Users\Schule\Documents\GitHub\Snake\WinSnake\WinSnake\obj\Debug\WinSnake.csprojResolveAssemblyReference.cache
+C:\Users\Schule\Documents\GitHub\Snake\WinSnake\WinSnake\obj\Debug\WinSnake.frmSnake.resources
+C:\Users\Schule\Documents\GitHub\Snake\WinSnake\WinSnake\obj\Debug\WinSnake.Properties.Resources.resources
+C:\Users\Schule\Documents\GitHub\Snake\WinSnake\WinSnake\obj\Debug\WinSnake.csproj.GenerateResource.Cache
