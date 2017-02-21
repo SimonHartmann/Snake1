@@ -31,7 +31,7 @@ namespace WinSnake
         private void pbSpielfeld_Click(object sender, EventArgs e)
         {
             sp = new Spiel();
-            sp.Schlange(pbSpielfeld, 30, 30, 15);
+            sp.Schlange(pbSpielfeld,Brushes.Pink, 30, 30, 15);
         }
     }
 }
