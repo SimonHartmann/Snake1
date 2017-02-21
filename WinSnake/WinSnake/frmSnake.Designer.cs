@@ -70,7 +70,7 @@
             this.Controls.Add(this.cmdStart);
             this.Controls.Add(this.pbSpielfeld);
             this.Name = "frmSnake";
-            this.Text = "Form1";
+            this.Text = "Snake";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbSpielfeld)).EndInit();
             this.ResumeLayout(false);
