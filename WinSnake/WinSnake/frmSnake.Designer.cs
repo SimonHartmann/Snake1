@@ -73,6 +73,7 @@
             this.Name = "frmSnake";
             this.Text = "Snake";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmSnake_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pbSpielfeld)).EndInit();
             this.ResumeLayout(false);
 

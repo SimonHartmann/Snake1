@@ -33,5 +33,22 @@ namespace WinSnake
             sp = new Spiel();
             sp.Schlange(pbSpielfeld,Brushes.Pink, 30, 30, 15);
         }
+
+        private void frmSnake_KeyDown(object sender, KeyEventArgs e)
+        {
+            switch(e.KeyCode)
+            {
+                case Keys.Left:
+                    break;
+                case Keys.Right:
+                    break;
+                case Keys.Up:
+                    break;
+                case Keys.Down:
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }
