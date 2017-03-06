@@ -14,7 +14,7 @@ namespace WinSnake
         Graphics g;
         PictureBox pb;
 
-        public void Schlange(PictureBox pb,Brush bfarbe, int intx, int inty,int intboxsize)
+        public void Schlange(PictureBox pb,Brush bfarbe, int intx, int inty,int intboxsize,int intRichtung)
         {
             intx = intx * intboxsize;
             inty = inty * intboxsize;

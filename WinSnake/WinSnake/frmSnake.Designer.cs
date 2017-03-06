@@ -51,7 +51,7 @@
             this.cmdStart.TabIndex = 1;
             this.cmdStart.Text = "Start";
             this.cmdStart.UseVisualStyleBackColor = true;
-            this.cmdStart.Click += new System.EventHandler(this.button1_Click);
+            this.cmdStart.Click += new System.EventHandler(this.cmdStart_Click);
             // 
             // cmdReset
             // 

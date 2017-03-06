@@ -30,15 +30,15 @@ namespace WinSnake
             
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void cmdStart_Click(object sender, EventArgs e)
         {
-
+            sp = new Spiel();
+            sp.Schlange(pbSpielfeld, Brushes.Pink, 10, 10, 15, intRichtung);
         }
 
         private void pbSpielfeld_Click(object sender, EventArgs e)
         {
-            sp = new Spiel();
-            sp.Schlange(pbSpielfeld,Brushes.Pink, 10, 10, 15);
+            
         }
 
         private void frmSnake_KeyDown(object sender, KeyEventArgs e)
@@ -61,5 +61,7 @@ namespace WinSnake
                     break;
             }
         }
+
+        
     }
 }
