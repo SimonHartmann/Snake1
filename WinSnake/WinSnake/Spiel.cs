@@ -23,7 +23,7 @@ namespace WinSnake
             intx = intx * intboxsize;
             inty = inty * intboxsize;
             g = pb.CreateGraphics();
-            g.FillEllipse(bfarbe, intx - (intboxsize / 2), inty - (intboxsize / 2), intboxsize, intboxsize);
+            g.FillEllipse(bfarbe, intx -intboxsize, inty - intboxsize, intboxsize, intboxsize);
         }
 
         public void EssenGenerieren(PictureBox pb, Brush bfarbe, int intboxsize) {
@@ -32,6 +32,7 @@ namespace WinSnake
             intEssenY = rnd.Next(0,30);
             g = pb.CreateGraphics();
             g.FillEllipse(bfarbe,intEssenX*intboxsize,intEssenY*intboxsize,intboxsize,intboxsize);
+
 
         }
 

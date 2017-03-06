@@ -13,6 +13,7 @@ namespace WinSnake
     public partial class frmSnake : Form
     {
         Spiel sp;
+        Gitter git;
         //int intKastenX;
         //int intKastenY;
         int intBoxSize = 15;
@@ -24,6 +25,7 @@ namespace WinSnake
         {
             InitializeComponent();
             sp = new Spiel();
+            git = new Gitter();
 
         }
 
@@ -41,6 +43,7 @@ namespace WinSnake
         {
             sp.EssenGenerieren(pbSpielfeld, Brushes.Green, intBoxSize);
             sp.Schlange(pbSpielfeld,Brushes.Pink, 10, 10, intBoxSize);
+            git.Linien(pbSpielfeld);
         }
     }
 }
