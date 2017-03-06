@@ -66,7 +66,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(537, 448);
+            this.ClientSize = new System.Drawing.Size(542, 478);
             this.Controls.Add(this.cmdReset);
             this.Controls.Add(this.cmdStart);
             this.Controls.Add(this.pbSpielfeld);

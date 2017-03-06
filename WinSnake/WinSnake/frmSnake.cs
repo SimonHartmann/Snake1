@@ -13,14 +13,17 @@ namespace WinSnake
     public partial class frmSnake : Form
     {
         Spiel sp;
-        int intKastenX;
-        int intKastenY;
+        //int intKastenX;
+        //int intKastenY;
+        int intBoxSize = 15;
 
-        
+
+
 
         public frmSnake()
         {
             InitializeComponent();
+            sp = new Spiel();
 
         }
 
@@ -36,8 +39,8 @@ namespace WinSnake
 
         private void pbSpielfeld_Click(object sender, EventArgs e)
         {
-            sp = new Spiel();
-            sp.Schlange(pbSpielfeld,Brushes.Pink, 10, 10, 15);
+            sp.EssenGenerieren(pbSpielfeld, Brushes.Green, intBoxSize);
+            sp.Schlange(pbSpielfeld,Brushes.Pink, 10, 10, intBoxSize);
         }
     }
 }
