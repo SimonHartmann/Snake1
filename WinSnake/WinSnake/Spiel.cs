@@ -17,6 +17,7 @@ namespace WinSnake
 
         public int intEssenY;
         public int intEssenX;
+        
 
         public void Schlange(PictureBox pb,Brush bfarbe, int intx, int inty,int intboxsize)
         {
@@ -24,6 +25,7 @@ namespace WinSnake
             inty = inty * intboxsize;
             g = pb.CreateGraphics();
             g.FillRectangle(bfarbe, intx -intboxsize, inty - intboxsize, intboxsize, intboxsize);
+
         }
 
         public void EssenGenerieren(PictureBox pb, Brush bfarbe, int intboxsize) {
@@ -32,10 +34,10 @@ namespace WinSnake
             intEssenY = rnd.Next(0,30);
             g = pb.CreateGraphics();
             g.FillRectangle(bfarbe,intEssenX*intboxsize,intEssenY*intboxsize,intboxsize,intboxsize);
-            
-
-
+         
         }
+
+       
 
 
     }

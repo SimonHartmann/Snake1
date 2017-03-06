@@ -18,15 +18,12 @@ namespace WinSnake
         //int intKastenY;
         int intBoxSize = 15;
 
-
-
-
+    
         public frmSnake()
         {
             InitializeComponent();
             sp = new Spiel();
             git = new Gitter();
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -36,14 +33,18 @@ namespace WinSnake
 
         private void button1_Click(object sender, EventArgs e)
         {
+            sp.Schlange(pbSpielfeld, Brushes.Pink, 15, 15, intBoxSize);
+            sp.EssenGenerieren(pbSpielfeld, Brushes.Green, intBoxSize);
+            git.Linien(pbSpielfeld);
 
         }
 
         private void pbSpielfeld_Click(object sender, EventArgs e)
         {
-            sp.EssenGenerieren(pbSpielfeld, Brushes.Green, intBoxSize);
-            sp.Schlange(pbSpielfeld,Brushes.Pink, 10, 10, intBoxSize);
-            git.Linien(pbSpielfeld);
+            
+
         }
+
+        
     }
 }
