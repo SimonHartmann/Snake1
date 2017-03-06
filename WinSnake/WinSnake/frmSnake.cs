@@ -15,6 +15,7 @@ namespace WinSnake
         Spiel sp;
         int intKastenX;
         int intKastenY;
+        int intRichtung;
 
         
 
@@ -45,12 +46,16 @@ namespace WinSnake
             switch(e.KeyCode)
             {
                 case Keys.Left:
+                    intRichtung = 1;
                     break;
                 case Keys.Right:
+                    intRichtung = 2;
                     break;
                 case Keys.Up:
+                    intRichtung = 3;
                     break;
                 case Keys.Down:
+                    intRichtung = 4;
                     break;
                 default:
                     break;
