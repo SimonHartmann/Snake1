@@ -17,6 +17,7 @@ namespace WinSnake
         //int intKastenX;
         //int intKastenY;
         int intBoxSize = 15;
+        int intTmerCounter;
 
     
         public frmSnake()
@@ -33,7 +34,7 @@ namespace WinSnake
 
         private void button1_Click(object sender, EventArgs e)
         {
-            sp.Schlange(pbSpielfeld, Brushes.Pink, 15, 15, intBoxSize);
+            timerTick.Enabled = true;
             sp.EssenGenerieren(pbSpielfeld, Brushes.Green, intBoxSize);
             git.Linien(pbSpielfeld);
 
@@ -45,6 +46,11 @@ namespace WinSnake
 
         }
 
-        
+        private void timerTick_Tick(object sender, EventArgs e)
+        {
+            sp.Schlange(pbSpielfeld, Brushes.Pink, 1, intTmerCounter, intBoxSize);
+            intTmerCounter++;
+
+        }
     }
 }

@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pbSpielfeld = new System.Windows.Forms.PictureBox();
             this.cmdStart = new System.Windows.Forms.Button();
             this.cmdReset = new System.Windows.Forms.Button();
+            this.timerTick = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pbSpielfeld)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,6 +64,10 @@
             this.cmdReset.Text = "Reset";
             this.cmdReset.UseVisualStyleBackColor = true;
             // 
+            // timerTick
+            // 
+            this.timerTick.Tick += new System.EventHandler(this.timerTick_Tick);
+            // 
             // frmSnake
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -83,6 +89,7 @@
         private System.Windows.Forms.PictureBox pbSpielfeld;
         private System.Windows.Forms.Button cmdStart;
         private System.Windows.Forms.Button cmdReset;
+        private System.Windows.Forms.Timer timerTick;
     }
 }
 
