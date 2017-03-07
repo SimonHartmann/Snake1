@@ -37,7 +37,7 @@ namespace WinSnake
             
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void cmdStart_Click(object sender, EventArgs e)
         {
             timerTick.Enabled = true;
             
@@ -48,26 +48,25 @@ namespace WinSnake
 
         private void pbSpielfeld_Click(object sender, EventArgs e)
         {
-            
+            sp.EssenGenerieren(pbSpielfeld, Brushes.Green, intBoxSize);
 
         }
 
         private void timerTick_Tick(object sender, EventArgs e)
-        {
-            sp.EssenGenerieren(pbSpielfeld, Brushes.Green, intBoxSize);
-            if (intRichtung == 1)
+        {        
+            if (intRichtung == 1)//links
             {
-
+                sp.Schlange(pbSpielfeld, Brushes.Pink, -1, intTmerCounter, intBoxSize);
             }
-            else if (intRichtung == 2)
+            else if (intRichtung == 2)//rechts
             {
                 sp.Schlange(pbSpielfeld, Brushes.Pink, 1, intTmerCounter, intBoxSize);
             }
-            else if (intRichtung == 3)
+            else if (intRichtung == 3)//hoch
             {
 
             }
-            else if (intRichtung == 4)
+            else if (intRichtung == 4)//runter
             {
 
             }

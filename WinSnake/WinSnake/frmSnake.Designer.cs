@@ -50,17 +50,19 @@
             this.cmdStart.Location = new System.Drawing.Point(456, 387);
             this.cmdStart.Name = "cmdStart";
             this.cmdStart.Size = new System.Drawing.Size(75, 23);
-            this.cmdStart.TabIndex = 1;
+            this.cmdStart.TabIndex = 0;
+            this.cmdStart.TabStop = false;
             this.cmdStart.Text = "Start";
             this.cmdStart.UseVisualStyleBackColor = true;
-            this.cmdStart.Click += new System.EventHandler(this.button1_Click);
+            this.cmdStart.Click += new System.EventHandler(this.cmdStart_Click);
             // 
             // cmdReset
             // 
             this.cmdReset.Location = new System.Drawing.Point(456, 416);
             this.cmdReset.Name = "cmdReset";
             this.cmdReset.Size = new System.Drawing.Size(75, 23);
-            this.cmdReset.TabIndex = 2;
+            this.cmdReset.TabIndex = 0;
+            this.cmdReset.TabStop = false;
             this.cmdReset.Text = "Reset";
             this.cmdReset.UseVisualStyleBackColor = true;
             // 
