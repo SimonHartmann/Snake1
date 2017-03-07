@@ -13,14 +13,31 @@ namespace WinSnake
 
         Graphics g;
         PictureBox pb;
+        Random rnd = new Random(DateTime.Now.Millisecond);
+
+        public int intEssenY;
+        public int intEssenX;
+        
 
         public void Schlange(PictureBox pb,Brush bfarbe, int intx, int inty,int intboxsize,int intRichtung)
         {
             intx = intx * intboxsize;
             inty = inty * intboxsize;
             g = pb.CreateGraphics();
-            g.FillEllipse(bfarbe, intx - (intboxsize / 2), inty - (intboxsize / 2), intboxsize, intboxsize);
+            g.FillRectangle(bfarbe, intx -intboxsize, inty - intboxsize, intboxsize, intboxsize);
+
         }
+
+        public void EssenGenerieren(PictureBox pb, Brush bfarbe, int intboxsize) {
+
+            intEssenX = rnd.Next(0,30);
+            intEssenY = rnd.Next(0,30);
+            g = pb.CreateGraphics();
+            g.FillRectangle(bfarbe,intEssenX*intboxsize,intEssenY*intboxsize,intboxsize,intboxsize);
+         
+        }
+
+       
 
 
     }
