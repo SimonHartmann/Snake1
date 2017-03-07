@@ -24,7 +24,7 @@ namespace WinSnake
             intx = intx * intboxsize;
             inty = inty * intboxsize;
             g = pb.CreateGraphics();
-            g.FillRectangle(bfarbe, intx -intboxsize, inty - intboxsize, intboxsize, intboxsize);
+            g.FillRectangle(bfarbe, intx -intboxsize+1, inty - intboxsize+1, intboxsize-2, intboxsize-2);
 
         }
 
@@ -33,7 +33,7 @@ namespace WinSnake
             intEssenX = rnd.Next(0,30);
             intEssenY = rnd.Next(0,30);
             g = pb.CreateGraphics();
-            g.FillRectangle(bfarbe,intEssenX*intboxsize,intEssenY*intboxsize,intboxsize,intboxsize);
+            g.FillRectangle(bfarbe,intEssenX*intboxsize,intEssenY*intboxsize,intboxsize-1,intboxsize-1);
          
         }
 

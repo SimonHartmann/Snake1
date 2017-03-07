@@ -23,6 +23,10 @@ namespace WinSnake
         int intAnfangY;
         int intEndeX;
         int intEndeY;
+<<<<<<< HEAD
+=======
+        int intX, intY;
+>>>>>>> refs/remotes/origin/angelika
 
         public frmSnake()
         {
@@ -41,13 +45,17 @@ namespace WinSnake
         {
             timerTick.Enabled = true;
             
+<<<<<<< HEAD
             sp.Schlange(pbSpielfeld, Brushes.Pink, 3, 3, intBoxSize);
+=======
+>>>>>>> refs/remotes/origin/angelika
             git.Linien(pbSpielfeld);
 
         }
 
         private void pbSpielfeld_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             sp.EssenGenerieren(pbSpielfeld, Brushes.Green, intBoxSize);
 
         }
@@ -79,6 +87,40 @@ namespace WinSnake
 
         }
 
+=======
+
+            sp.EssenGenerieren(pbSpielfeld, Brushes.Green, intBoxSize);
+        }
+
+        private void timerTick_Tick(object sender, EventArgs e)
+        {
+            
+            if (intRichtung == 1) //Links
+            {
+                sp.Schlange(pbSpielfeld, Brushes.Pink, intX--, intY, intBoxSize);
+            }
+            else if (intRichtung == 2) //Rechts
+            {
+                sp.Schlange(pbSpielfeld, Brushes.Pink, intX++, intY, intBoxSize);
+            }
+            else if (intRichtung == 3) //Hoch
+            {
+                sp.Schlange(pbSpielfeld, Brushes.Pink, intX, intY --, intBoxSize);
+            }
+            else if (intRichtung == 4) //Runter
+            {
+                sp.Schlange(pbSpielfeld, Brushes.Pink, intX, intY ++, intBoxSize);
+            }
+            else
+            {
+                sp.Schlange(pbSpielfeld, Brushes.Pink, 16, 15+intTmerCounter, intBoxSize);
+            }
+           
+            intTmerCounter++;
+
+        }
+
+>>>>>>> refs/remotes/origin/angelika
         private void frmSnake_KeyDown(object sender, KeyEventArgs e)
         {
             switch (e.KeyCode)
