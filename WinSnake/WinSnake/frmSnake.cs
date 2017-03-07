@@ -13,16 +13,23 @@ namespace WinSnake
     public partial class frmSnake : Form
     {
         Spiel sp;
-        int intKastenX;
-        int intKastenY;
+        Gitter git;
+        //int intKastenX;
+        //int intKastenY;
+        int intBoxSize = 15;
+        int intTmerCounter;
         int intRichtung;
-
-        
+        int intAnfangX;
+        int intAnfangY;
+        int intEndeX;
+        int intEndeY;
 
         public frmSnake()
         {
             InitializeComponent();
-
+            sp = new Spiel();
+            git = new Gitter();
+           
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -30,20 +37,52 @@ namespace WinSnake
             
         }
 
-        private void cmdStart_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            sp = new Spiel();
-            sp.Schlange(pbSpielfeld, Brushes.Pink, 10, 10, 15, intRichtung);
+            timerTick.Enabled = true;
+            
+            sp.Schlange(pbSpielfeld, Brushes.Pink, 3, 3, intBoxSize);
+            git.Linien(pbSpielfeld);
+
         }
 
         private void pbSpielfeld_Click(object sender, EventArgs e)
         {
             
+
+        }
+
+        private void timerTick_Tick(object sender, EventArgs e)
+        {
+            sp.EssenGenerieren(pbSpielfeld, Brushes.Green, intBoxSize);
+            if (intRichtung == 1)
+            {
+
+            }
+            else if (intRichtung == 2)
+            {
+                sp.Schlange(pbSpielfeld, Brushes.Pink, 1, intTmerCounter, intBoxSize);
+            }
+            else if (intRichtung == 3)
+            {
+
+            }
+            else if (intRichtung == 4)
+            {
+
+            }
+            else
+            {
+                sp.Schlange(pbSpielfeld, Brushes.Pink, 3, intTmerCounter, intBoxSize);
+            }
+           
+            intTmerCounter++;
+
         }
 
         private void frmSnake_KeyDown(object sender, KeyEventArgs e)
         {
-            switch(e.KeyCode)
+            switch (e.KeyCode)
             {
                 case Keys.Left:
                     intRichtung = 1;
@@ -61,7 +100,5 @@ namespace WinSnake
                     break;
             }
         }
-
-        
     }
 }

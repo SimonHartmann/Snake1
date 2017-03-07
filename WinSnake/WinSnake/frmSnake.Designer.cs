@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pbSpielfeld = new System.Windows.Forms.PictureBox();
             this.cmdStart = new System.Windows.Forms.Button();
             this.cmdReset = new System.Windows.Forms.Button();
+            this.timerTick = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pbSpielfeld)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,7 +53,7 @@
             this.cmdStart.TabIndex = 1;
             this.cmdStart.Text = "Start";
             this.cmdStart.UseVisualStyleBackColor = true;
-            this.cmdStart.Click += new System.EventHandler(this.cmdStart_Click);
+            this.cmdStart.Click += new System.EventHandler(this.button1_Click);
             // 
             // cmdReset
             // 
@@ -62,11 +64,15 @@
             this.cmdReset.Text = "Reset";
             this.cmdReset.UseVisualStyleBackColor = true;
             // 
+            // timerTick
+            // 
+            this.timerTick.Tick += new System.EventHandler(this.timerTick_Tick);
+            // 
             // frmSnake
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(537, 448);
+            this.ClientSize = new System.Drawing.Size(542, 478);
             this.Controls.Add(this.cmdReset);
             this.Controls.Add(this.cmdStart);
             this.Controls.Add(this.pbSpielfeld);
@@ -84,6 +90,7 @@
         private System.Windows.Forms.PictureBox pbSpielfeld;
         private System.Windows.Forms.Button cmdStart;
         private System.Windows.Forms.Button cmdReset;
+        private System.Windows.Forms.Timer timerTick;
     }
 }
 
